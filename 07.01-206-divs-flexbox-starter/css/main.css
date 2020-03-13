@@ -99,6 +99,7 @@ textarea {
 html {
   background-color: #fff;
   height: 100%;
+  display: flex;
 }
 
 body {
@@ -116,24 +117,79 @@ body {
 
 }
 
+.topheader {
+
+    display: flex;
+    flex: row wrap 200px inherit;
+    justify-content: center;
+    align-items: flex-start;
+    color:black;
+    line-height: 1.5em;
+    font-size: 0.6em;
+    background-color: pink;
+    height: 100px;
+    width: auto;
+    font-family: Bellota;
+    font-size: 2em;
+    margin: auto;
+    
+}
+
+
+.abstract {
+    display: flex;
+    flex: row wrap 200px inherit;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    line-height: 1.5em;
+    font-size: 100%;
+    background-color: pink;
+    height: 300px;
+    width: auto;
+    word-wrap: break-word;
+    
+}
+
+
 .div-1, .div-2, .div-3 {
   /*give the divs a width of 30%, add display:flex, set justify-content and align-items to center*/
   display: flex;
+  flex: row wrap 200px inherit;
   justify-content: center;
   align-items: center;
   color: black;
   line-height: 1.5em;
-  font-size: 0.6em;
-  background-color: #e7f159;
+  font-size: 100%;
+  background-color: pink;
   height: 300px;
   width: 33%;
-  border-style: solid;
-  border-color: black;
-  border-width: 10px;
+  border-right: black ;
+  border-width: 10%x;
+  flex-flow: column;
+  word-wrap: break-word;
 }
 
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  color: black;
+  line-height: 1.5em;
+  background-color: pink;
+   height: 30px;
+  width: auto;
+  padding: 15px;
+}
 
-
+.fa-facebook,
+.fa-twitter,
+.fa-linkedin,
+.fa-instagram {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    align-content: flex-end;
+}
 
 /* ==========================================================================
    Helper classes
@@ -297,4 +353,19 @@ body {
     h3 {
         page-break-after: avoid;
     }
+}
+
+/* ----------- Tablets larger than 768px wide ----------- */
+@media (min-width: 768px) {
+	body {
+    background: pink;
+  }
+}
+
+/* ----------- Monitors larger than 1200px wide ----------- */
+@media (min-width: 1200px) {
+  body{
+    background: pink;
+  }
+
 }
