@@ -108,6 +108,33 @@ body {
     height: 100%;
 }
 
+.topwrapper {
+    /* set the display to flex and use the justify-content & align-items properties to center all child elements on the page */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+}
+#topcontent {
+    /* set the display to flex and use the justify-content & align-items properties to center the text within the div*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #222;
+    background:rgba(0, 0, 0, 0.521);
+    color: rgb(255, 255, 255);
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 300;
+    font-size: 1.25em;
+    line-height: 1.5em;
+    border-radius: 100px;
+    padding: 0px 10px;
+    width: 300px;
+    height: 300px;
+}
+
 .wrapper {
     /* set the display to flex and use the justify-content & align-items properties to center all child elements on the page */
     display: flex;
@@ -130,8 +157,8 @@ body {
     font-weight: 300;
     font-size: 1.25em;
     line-height: 1.5em;
-    border-radius: 10px;
-    padding: 0px 30px;
+    border-radius: 100px;
+    padding: 0px 10px;
     width: 300px;
     height: 300px;
 }
