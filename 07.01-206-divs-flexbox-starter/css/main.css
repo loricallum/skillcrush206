@@ -121,12 +121,15 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #fff;
+  color: black;
   line-height: 1.5em;
-  font-size: 1.6em;
-  background-color: #f16059;
+  font-size: 0.6em;
+  background-color: #e7f159;
   height: 300px;
-  width: 30%;
+  width: 33%;
+  border-style: solid;
+  border-color: black;
+  border-width: 10px;
 }
 
 
