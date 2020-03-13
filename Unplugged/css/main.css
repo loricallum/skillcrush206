@@ -1,0 +1,57 @@
+body {
+    font-size: 1em;
+    font-family: 'Source Sans Pro', sans-serif;
+    align-content: center;
+    flex-wrap: wrap;
+    
+}
+
+#module-one {
+    font-size: 2rem;
+}
+
+h1 {
+    font-size: 3.75em;
+    font-family: 'Sansita One', cursive;
+    text-align: end;
+    text-decoration-color: blueviolet;
+    display: flex;
+    justify-content: space-around;
+    background-color: palevioletred;
+    align-items: center;
+
+}
+
+h2 {
+    font-size: 2.25em;
+    display: flex;
+    justify-content: space-around;
+}
+
+p {
+    font-size:  1em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#module-two {
+    font-size: 1.9rem;
+}
+
+h3 {
+    font-size: 1.9em;
+    text-align: end;
+    display: flex;
+    justify-content: space-around;
+}
+
+#module-three {
+    font-size: 1.5rem;
+}
+
+h4 {
+    font-size: 1.31em;
+    display: flex;
+    justify-content: space-around;
+}
