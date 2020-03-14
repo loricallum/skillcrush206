@@ -97,59 +97,59 @@ textarea {
 
 
 html {
-  background-color: #fff;
   height: 100%;
-  display: flex;
+  width: 100%;
 }
 
 body {
-  font-family: 'Source Sans Pro', sans-serif;
-  padding: 2em;
+  
+   
+    background-image: url("https://images.unsplash.com/photo-1503513883989-25ef8b2f1a53?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60");
+  background-repeat: no-repeat;
+    font-family: 'Bellota', sans-serif;
+  padding: 0em 2em;
   font-size: 1.25em;
-  height: 100%;
+  color: black;
+  display: flex;
+  justify-content: center;
 }
 
-.wrapper {
+.flex-container {
   /*add display:flex and set justify-content to space-between*/
   display: flex;
   justify-content: space-between;
-  font-weight: 700;
+  flex-flow: row wrap;
+  max-width: 1200px;
 
 }
 
-.topheader {
-
+p span {
+    font-family: 'Bellota', sans-serif;
+  }
+  
+  header,
+  footer {
+    width: 100%;
     display: flex;
-    flex: row wrap 200px inherit;
-    justify-content: center;
-    align-items: flex-start;
-    color:black;
-    line-height: 1.5em;
-    font-size: 0.6em;
-    background-color: pink;
-    height: 100px;
-    width: auto;
-    font-family: Bellota;
-    font-size: 2em;
-    margin: auto;
-    
-}
-
-
-.abstract {
+    justify-content: flex-start;
+  }
+  
+  header h1 {
+    font-family: 'Bellota', sans-serif;
+    font-size: 3em;
+  }
+   
+  main {
+    width: 100%;
     display: flex;
-    flex: row wrap 200px inherit;
     justify-content: center;
-    align-items: center;
-    color: black;
-    line-height: 1.5em;
-    font-size: 100%;
-    background-color: pink;
-    height: 300px;
-    width: auto;
-    word-wrap: break-word;
-    
-}
+    border-bottom: 1px solidpink;
+  }
+  
+  main p {
+    font-size: 1.35em;
+  }
+  
 
 
 .div-1, .div-2, .div-3 {
@@ -170,16 +170,22 @@ body {
   word-wrap: break-word;
 }
 
-.footer {
-  display: flex;
-  flex-wrap: wrap;
-  color: black;
-  line-height: 1.5em;
-  background-color: pink;
-   height: 30px;
-  width: auto;
-  padding: 15px;
-}
+.flex-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.5em;
+    font-size: 1em;
+    border-bottom: 1px solid #555;
+  }
+  
+  footer {
+    border-top: 1px solid black;
+  }
+  
+  footer i {
+    padding: 30px 20px 0 0;
+  }
 
 .fa-facebook,
 .fa-twitter,
@@ -191,6 +197,8 @@ body {
     align-content: flex-end;
 }
 
+
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -199,7 +207,7 @@ body {
  * Hide visually and from screen readers:
  */
 
-.hidden {
+ .hidden {
     display: none !important;
 }
 
@@ -270,6 +278,31 @@ body {
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
+
+   @media all and (max-width: 680px) {
+    body {
+      padding: 1em;
+    }
+}
+
+@media all and (max-width: 768px) {
+    body {
+      padding: 1em;
+    }
+}
+
+@media (min-width: 1200px) {
+    .flex-items {
+      flex-basis: 30%;
+      border-bottom: none;
+    }
+
+    #div-2 p {
+      border-left: 1px solid #555;
+      border-right: 1px solid #555;
+      padding: 0 40px;
+    }
+}
 
 @media print,
        (-webkit-min-device-pixel-ratio: 1.25),
@@ -353,19 +386,4 @@ body {
     h3 {
         page-break-after: avoid;
     }
-}
-
-/* ----------- Tablets larger than 768px wide ----------- */
-@media (min-width: 768px) {
-	body {
-    background: pink;
-  }
-}
-
-/* ----------- Monitors larger than 1200px wide ----------- */
-@media (min-width: 1200px) {
-  body{
-    background: pink;
-  }
-
 }
